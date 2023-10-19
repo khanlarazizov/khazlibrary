@@ -1,0 +1,252 @@
+@import url("../fonts/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 150px;
+    max-width: 1440px;
+
+    .login {
+        display: flex;
+        flex-direction: row;
+        column-gap: 56px;
+        height: 100%;
+        align-items: center;
+
+        &>div {
+            width: 50%;
+        }
+
+        &>div:first-child>p:first-child {
+            color: #2694F9;
+            font-size: 64px;
+            font-weight: 700;
+        }
+
+        &>div:first-child>p:last-child {
+            font-size: 32px;
+        }
+
+        &>div:last-child>.form1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.50);
+
+            &>input {
+                width: 100%;
+                border-radius: 15px;
+                border: 1px solid #F2F2F2;
+                background: #FFF;
+                padding: 20px;
+
+                &::placeholder {
+                    color: #C2C2C2;
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 1px solid #a8a8a8;
+                }
+            }
+
+            .login-btn {
+                width: 100%;
+                border-radius: 15px;
+                background: #2694F9;
+                padding: 20px;
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 700;
+                border: 1px solid transparent;
+                transition: all .15s ease-in-out;
+                text-decoration: none;
+                width: 100%;
+                text-align: center;
+
+                &:hover {
+                    color: #2694F9 !important;
+                    border: 1px solid #2694F9;
+                    background-color: white;
+                    cursor: pointer;
+                    box-shadow: #2693f9ae 0px 3px 14px 0px;
+                }
+            }
+
+            &>span {
+
+                text-align: center;
+                color: #2694F9;
+                font-size: 20px;
+                font-weight: 300;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .register-btn {
+                width: 280px;
+                border-radius: 15px;
+                background: #22D134;
+                padding: 20px;
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 700;
+                border: 1px solid transparent;
+                transition: all .15s ease-in-out;
+
+                &:hover {
+                    border: 1px solid #22D134;
+                    background-color: white;
+                    color: #22D134;
+                    cursor: pointer;
+                    box-shadow: #22D134ae 0px 10px 20px -10px, #22D134ae 0px 10px 20px -20px;
+                }
+            }
+        }
+    }
+
+    .pop-register {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.649);
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        .form2 {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 470px;
+
+            .birthday {
+                flex-direction: column;
+                display: flex;
+            }
+
+            .signup {
+                // background-color: red;
+                border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                padding: 10px 25px;
+
+                h3 {
+                    color: rgb(0, 0, 0);
+                    font-size: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.49);
+                    font-size: 15px;
+                    padding-top: 5px;
+                }
+            }
+
+            .signup+div {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 25px;
+                padding-bottom: 20px;
+                row-gap: 10px;
+            }
+
+            .name-surname {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+
+                input {
+                    width: 50%;
+
+                    border-radius: 15px;
+                    border: 1px solid #F2F2F2;
+                    background: #FFF;
+                    padding: 13px;
+
+                    &::placeholder {
+                        color: #C2C2C2;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid #a8a8a8;
+                    }
+
+                }
+
+
+            }
+
+            .signup-btn {
+                width: 50%;
+                margin: 0 auto;
+
+                border-radius: 15px;
+                background: #22D134;
+                padding: 13px;
+                color: #FFF;
+                font-size: 17px;
+                font-weight: 700;
+                border: 1px solid transparent;
+                transition: all .15s ease-in-out;
+
+                &:hover {
+                    border: 1px solid #22D134;
+                    background-color: white;
+                    color: #22D134;
+                    cursor: pointer;
+                    box-shadow: #22D134ae 0px 10px 20px -10px, #22D134ae 0px 10px 20px -20px;
+                }
+
+
+            }
+        }
+
+        .signup-email,
+        .signup-pass,
+        #birthday {
+
+            width: 100%;
+            border-radius: 15px;
+            border: 1px solid #F2F2F2;
+            background: #FFF;
+            padding: 13px;
+
+            &::placeholder {
+                color: #C2C2C2;
+            }
+
+            &:focus {
+                outline: none;
+                border: 1px solid #a8a8a8;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            color: #000000a6;
+            padding-left: 15px;
+            padding-bottom: 5px;
+        }
+    }
+}

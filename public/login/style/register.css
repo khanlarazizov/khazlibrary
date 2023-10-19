@@ -1,0 +1,90 @@
+.modal-content {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.modal-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+/* Input fields styling */
+.form2 input[type="text"],
+.form2 input[type="email"],
+.form2 input[type="password"],
+.form2 input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Error message styling */
+.error-message {
+    font-size: 14px;
+    margin: 5px 0;
+    display: block;
+}
+
+/* Name and Surname styling */
+.name-surname {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.signup-name, .signup-surname {
+    width: 48%; /* Adjusting for the space in between */
+}
+
+/* Birthday label styling */
+.birthdate label {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+.signup-btn {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
